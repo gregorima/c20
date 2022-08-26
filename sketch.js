@@ -8,9 +8,6 @@ var engine;
 var world;
 var ball;
 var ground;
-var wedge;
-var angle=60;
-var poly;
 var rock;
 var ball2;
 var ball3;
@@ -73,7 +70,7 @@ function setup() {
   ground = Matter.Bodies.rectangle(200,390,400,20,ground_options);
   Matter.World.add(world,ground);
   
-  rectMode(CENTER);
+  rectMode(CENTER); // centralizar retângulo
   ellipseMode(RADIUS); // mudar o raio
 }
 
